@@ -15,7 +15,7 @@ public static class PlayModeEditReminder
 
     static PlayModeEditReminder()
     {
-        SceneView.onSceneGUIDelegate += OnSceneGUI;
+        SceneView.duringSceneGui += OnSceneGUI;
     }
     static void OnSceneGUI(SceneView view)
     {
